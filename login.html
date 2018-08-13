@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>We Wolrd Forms</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/materialize.css">
+    <link rel="stylesheet" href="./css/aux.css">
+    <style>
+        body {
+            background: #e7eef7 url("images/map-bg.png") no-repeat center fixed;
+            background-size: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login">
+            <ul class="tabs row">
+                <li class="tab col s6">
+                    <a class="active white-text" href="#test1">Login</a>
+                </li>
+                <li class="tab col s6">
+                    <a href="#test2" class="white-text">Cadastro</a>
+                </li>
+            </ul>
+            <div id="test1" class="card">
+                <div class="logo-login-page">
+                    <img src="images/logo1.png" alt="">
+                </div>
+                <form action="" method="post" class="card-content">
+                    <div class="input-field">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Senha</label>
+                    </div>
+                    <div class="row">
+                        <label style='float: right;'>
+                            <a class='text-color-blue' href='#!'>
+                                <b>Enqueceu a senha?</b>
+                            </a>
+                        </label>
+                    </div>
+                    <center>
+                        <div class='row'>
+                            <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect'>Entrar</button>
+                        </div>
+                    </center>
+                </form>
+            </div>
+            <div id="test2" class="card">
+                <div class="logo-login-page">
+                    <img src="images/logo1.png" alt="">
+                </div>
+                <form action="" method="post" class="card-content">
+                    <div class="input-field">
+                        <input id="name" type="text" class="validate">
+                        <label for="name">Nome Completo</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="email1" type="email" class="validate">
+                        <label for="email1">E-mail</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Senha</label>
+                    </div>
+                    <div class="input-field">
+                        <select>
+                          <option value="" disabled selected>Tipo de conta</option>
+                          <option value="1">Usuário Parceiro</option>
+                          <option value="2">Administrador</option>
+                          <option value="3">Usuário We World</option>
+                        </select>
+                       
+                    </div>
+                    <center>
+                        <div class='row'>
+                            <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect'>Cadastrar</button>
+                        </div>
+                    </center>
+                </form>
+            </div>          
+        </div>
+    </div>
+
+    <script src="./js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
+</body>
+
+</html>

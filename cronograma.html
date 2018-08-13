@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+
+ <!--Import Google Icon Font-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!--Import materialize.css-->
+ <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+ <link rel="stylesheet" type="text/css" href="css/aux.css">
+
+ <!--Let browser know website is optimized for mobile-->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body class="body  grey lighten-2">
+
+ <header>
+  <nav>
+
+   <div class="nav-wrapper light-blue lighten-1">
+
+     <a id="brand-logo" href="#" class="brand-logo white"><img id="logo" src="images/logo1.png"></a>
+
+     <ul id="nav-mobile" class="right hide-on-med-and-down">
+       <!-- DROPDOWN DO USER -->
+       <ul id='dropdown1' class='dropdown-content' >
+         <li><a href="#!" class="light-blue-text">Perfil</a></li>
+         <li><a href="#!" class="light-blue-text">Sair</a></li>
+       </ul>
+       <!-- TESTE -->
+       <li><a href="#" class="dropdown-trigger" data-target="dropdown1"><i class="material-icons right">account_circle</i>Usuário</a></li>
+     </ul>
+     <div class="container" >
+       <a href="index.html" class="breadcrumb white-text">Painel principal</a>
+       <a href="#!" class="breadcrumb white-text">Cronograma de atividades</a>
+     </div>
+   </div>
+
+ </nav>
+ 
+
+
+</header>
+
+<div class="container">
+ <form action="#">
+   <div class="row">
+     <div class="col s12 m12 ">
+
+
+       <div class="card">
+         <div class="card-content light-blue-text">
+           <span class="card-title">Cronograma de atividades</span>
+           <p>Elaborar um cronograma realístico das Atividades individuais.             
+          </p>
+           <div id="separator" style="height: 20px"></div>
+                    <ul class="collapsible popout" data-collapsible="accordion">
+                        <li>
+                            <div class="collapsible-header">Atividade</div>
+                            <div class="collapsible-body">
+                                <div class="collection">
+
+                                  <div class="input-field col s8">
+                                     <input id="atv" type="text" class="validate">
+                                     <label for="atv">Atividade</label>
+                                  </div>
+                                  <div class="col s2">
+                                    <label>Mês</label>
+                                     <select class="browser-default">
+                                       <option value="1">Janeiro</option>
+                                       <option value="2">Fevereiro</option>
+                                       <option value="3">Março</option>
+                                       <option value="4">Abril</option>
+                                       <option value="5">Maio</option>
+                                       <option value="6">Junho</option>
+                                       <option value="7">Julho</option>
+                                       <option value="8">Agosto</option>
+                                       <option value="9">Setembro</option>
+                                       <option value="10">Outubro</option>
+                                       <option value="11">Novembro</option>
+                                       <option value="12">Dezembro</option>
+                                     </select>
+                                  </div>
+                                  <div class="col s2">
+                                    <label>Ano</label>
+                                     <select class="browser-default">
+                                       <option value="1">2018</option>
+                                       <option value="2">2019</option>
+                                       <option value="3">2020</option>
+                                       <option value="4">2021</option>
+                                       <option value="5">2022</option>
+                                       <option value="6">2023</option>
+                                       <option value="7">2024</option>
+                                       <option value="8">2025</option>
+                                     </select>
+                                  </div>
+                                  <div class="input-field col s12">
+                                     <input id="atvp2" type="text" class="validate">
+                                     <label for="atvp2">Atividade preparatória</label>
+                                  </div>
+                                  <div class="input-field col s12">
+                                     <input id="atvi2" type="text" class="validate">
+                                     <label for="atvi2">Atividade inicial</label>
+                                  </div>
+                                  <div class="input-field col s12">
+                                     <input id="atvr2" type="text" class="validate">
+                                     <label for="atvr2">Atividade recorrente</label>
+                                  </div>
+                                  <div class="input-field col s12">
+                                     <input id="atvc2" type="text" class="validate">
+                                     <label for="atvc2">Atividade conclusiva</label>
+                                  </div>
+
+                                  <div class="input-field col s12">
+                                   <input id="R1" type="text" class="validate">
+                                   <label for="R1">Atores</label>
+                                 </div>
+
+                                  <div class="input-field col s12">
+                                     <input id="R1" type="text" class="validate">
+                                     <label for="R1">Resultado esperado 1</label>
+                                  </div>
+
+                                  <div class="input-field col s12">
+                                     <input id="R2" type="text" class="validate">
+                                     <label for="R2">Resultado esperado 2</label>
+                                  </div>
+                                  <div class="input-field col s12">
+                                     <input id="R3" type="text" class="validate">
+                                     <label for="R3">Resultado esperado 3</label>
+                                  </div>
+                                  <a class="waves-effect waves-light btn right">Confirmar</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Atividade</div>
+                            <div class="collapsible-body">
+                                <div class="collection">
+
+                                  <div class="input-field col s8">
+                                     <input id="atv3" type="text" class="validate">
+                                     <label for="atv3">Atividade</label>
+                                  </div>
+                                  <div class="col s2">
+                                    <label>Mês</label>
+                                     <select class="browser-default">
+                                       <option value="1">Janeiro</option>
+                                       <option value="2">Fevereiro</option>
+                                       <option value="3">Março</option>
+                                       <option value="4">Abril</option>
+                                       <option value="5">Maio</option>
+                                       <option value="6">Junho</option>
+                                       <option value="7">Julho</option>
+                                       <option value="8">Agosto</option>
+                                       <option value="9">Setembro</option>
+                                       <option value="10">Outubro</option>
+                                       <option value="11">Novembro</option>
+                                       <option value="12">Dezembro</option>
+                                     </select>
+                                  </div>
+                                  <div class="col s2">
+                                    <label>Ano</label>
+                                     <select class="browser-default">
+                                       <option value="1">2018</option>
+                                       <option value="2">2019</option>
+                                       <option value="3">2020</option>
+                                       <option value="4">2021</option>
+                                       <option value="5">2022</option>
+                                       <option value="6">2023</option>
+                                       <option value="7">2024</option>
+                                       <option value="8">2025</option>
+                                     </select>
+                                  </div>
+                                  <div class="input-field col s12">
+                                     <input id="atvp3" type="text" class="validate">
+                                     <label for="atvp3">Atividade preparatória</label>
+                                  </div>
+                                  <div class="input-field col s12">
+                                     <input id="atvi3" type="text" class="validate">
+                                     <label for="atvi3">Atividade inicial</label>
+                                  </div>
+                                  <div class="input-field col s12">
+                                     <input id="atvr3" type="text" class="validate">
+                                     <label for="atvr3">Atividade recorrente</label>
+                                  </div>
+                                  <div class="input-field col s12">
+                                     <input id="atvc3" type="text" class="validate">
+                                     <label for="atvc3">Atividade conclusiva</label>
+                                  </div>
+
+                                  <div class="input-field col s12">
+                                   <input id="at2" type="text" class="validate">
+                                   <label for="at2">Atores</label>
+                                 </div>
+
+                                  <div class="input-field col s12">
+                                     <input id="R1" type="text" class="validate">
+                                     <label for="R1">Resultado esperado 1</label>
+                                  </div>
+
+                                  <div class="input-field col s12">
+                                     <input id="R2" type="text" class="validate">
+                                     <label for="R2">Resultado esperado 2</label>
+                                  </div>
+                                  <div class="input-field col s12">
+                                     <input id="R3" type="text" class="validate">
+                                     <label for="R3">Resultado esperado 3</label>
+                                  </div>
+                                  <a class="waves-effect waves-light btn right">Confirmar</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Atividade</div>
+                            <div class="collapsible-body">
+                                <div class="collection">
+
+                                  <div class="input-field col s8">
+                                     <input id="atv1" type="text" class="validate">
+                                     <label for="atvi">Atividade</label>
+                                  </div>
+                                  <div class="col s2">
+                                    <label>Mês</label>
+                                     <select class="browser-default">
+                                       <option value="1">Janeiro</option>
+                                       <option value="2">Fevereiro</option>
+                                       <option value="3">Março</option>
+                                       <option value="4">Abril</option>
+                                       <option value="5">Maio</option>
+                                       <option value="6">Junho</option>
+                                       <option value="7">Julho</option>
+                                       <option value="8">Agosto</option>
+                                       <option value="9">Setembro</option>
+                                       <option value="10">Outubro</option>
+                                       <option value="11">Novembro</option>
+                                       <option value="12">Dezembro</option>
+                                     </select>
+                                  </div>
+                                  <div class="col s2">
+                                    <label>Ano</label>
+                                     <select class="browser-default">
+                                       <option value="1">2018</option>
+                                       <option value="2">2019</option>
+                                       <option value="3">2020</option>
+                                       <option value="4">2021</option>
+                                       <option value="5">2022</option>
+                                       <option value="6">2023</option>
+                                       <option value="7">2024</option>
+                                       <option value="8">2025</option>
+                                     </select>
+                                  </div>
+                                  <div class="input-field col s12">
+                                     <input id="atvp" type="text" class="validate">
+                                     <label for="atvp">Atividade preparatória</label>
+                                  </div>
+                                  <div class="input-field col s12">
+                                     <input id="atvi" type="text" class="validate">
+                                     <label for="atvi">Atividade inicial</label>
+                                  </div>
+                                  <div class="input-field col s12">
+                                     <input id="atvr" type="text" class="validate">
+                                     <label for="atvr">Atividade recorrente</label>
+                                  </div>
+                                  <div class="input-field col s12">
+                                     <input id="atvc" type="text" class="validate">
+                                     <label for="atvc">Atividade conclusiva</label>
+                                  </div>
+
+                                  <div class="input-field col s12">
+                                   <input id="at3" type="text" class="validate">
+                                   <label for="at3=">Atores</label>
+                                 </div>
+
+                                  <div class="input-field col s12">
+                                     <input id="Re1" type="text" class="validate">
+                                     <label for="Re1">Resultado esperado 1</label>
+                                  </div>
+
+                                  <div class="input-field col s12">
+                                     <input id="Re2" type="text" class="validate">
+                                     <label for="Re2">Resultado esperado 2</label>
+                                  </div>
+                                  <div class="input-field col s12">
+                                     <input id="Re3" type="text" class="validate">
+                                     <label for="Re3">Resultado esperado 3</label>
+                                  </div>
+                                  <a class="waves-effect waves-light btn right">Confirmar</a>
+                                </div>
+                            </div>
+                        </li>
+                      </ul>
+                 <div class="row">
+
+                   <a class="btn-floating btn-small waves-effect waves-light light-blue right" style="margin-right: 30px; margin-top: 10px;"><i class="material-icons">add</i></a>
+
+            
+                </div>
+            </div>
+
+       </div>
+     </div>
+
+
+
+
+
+
+   </div>
+  </form>
+  
+
+ </div>
+
+<div id="nextandprevious" class="container" style="height: 20px;">
+
+  <a class="waves-effect waves-light btn modal-trigger light-blue right" href="#modal1">Próximo</a>
+
+</div>
+
+ <div id="modal1" class="modal">
+      <div class="modal-content gree-lighten 2">
+       <h4>Seção completa</h4>
+       <p>Você terminou essa seção, deseja enviar ?</p>
+     </div>
+     <div class="modal-footer">  
+      
+        <button class="btn waves-effect waves-light red" type="submit" name="action">Cancelar
+          <i class="material-icons right">cancel</i>
+        </button>
+
+        <button href= "#!" class="btn waves-effect waves-light gree-lighten" type="submit" name="action">Sim
+          <i class="material-icons right">send</i>
+        </button>
+          
+      </div>
+
+</div>
+
+<footer class="page-footer light-blue lighten-1">
+ <div class="container">
+   <div class="row">
+     <div class="circle white left">
+       <img class="footerimg" src="images/logo1.png">
+     </div>
+
+
+   </div>
+ </div>
+ <div class="footer-copyright">
+   <div class="container">
+     © 2014 Copyright Text
+   </div>
+ </div>
+</footer>
+
+
+
+<!--JavaScript at end of body for optimized loading-->
+
+<script src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript">M.AutoInit();</script>
+
+</body>
+</html>

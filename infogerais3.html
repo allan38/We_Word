@@ -1,0 +1,289 @@
+  <!DOCTYPE html>
+  <meta charset="utf-8">
+  <html>
+  <head>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="css/aux.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body class="body" style=" background-color: #EEE">
+
+    <header>
+      <nav>
+
+        <div class="nav-wrapper light-blue lighten-1">
+
+          <a id="brand-logo" href="#" class="brand-logo white"><img id="logo" src="images/logo1.png"></a>
+
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <!-- DROPDOWN DO USER -->
+            <ul id='dropdown1' class='dropdown-content' >
+              <li><a href="#!" class="light-blue-text">Perfil</a></li>
+              <li><a href="#!" class="light-blue-text">Sair</a></li>
+            </ul>
+            <!-- TESTE -->
+            <li><a href="#" class="dropdown-trigger" data-target="dropdown1"><i class="material-icons right">account_circle</i>Usuário</a></li>
+          </ul>
+          <div class="container" > 
+            <a href="index.html" class="breadcrumb white-text">Painel principal</a>
+            <a href="#!" class="breadcrumb white-text">Informações gerais</a>
+          </div>
+        </div>
+
+      </nav>
+
+
+
+    </header>
+
+    <div class="container">
+      <form action="#">
+        <div class="row">
+
+          <div class="col s12 m12 ">
+            <div class="card">
+
+
+
+              <div class="card-content light-blue-text">
+                <span class="card-title">Dados do projeto</span>
+
+                <div class="row">
+                  <div class="input-field col s3">
+                    <input id="p" type="text" class="validate">
+                    <label for="p">País</label>
+                    <span class="helper-text" data-error="Campo inválido!!" data-success=""></span>
+                  </div>
+                  <div class="input-field col s3">
+                    <input id="r" type="text" class="validate">
+                    <label for="r">Região</label>
+                    <span class="helper-text" data-error="Campo inválido!!" data-success=""></span>
+                  </div>
+                  <div class="input-field col s3">
+                    <input id="c" type="text" class="validate">
+                    <label for="c">Cidade / Local</label>
+                    <span class="helper-text" data-error="Campo inválido!!" data-success=""></span>
+                  </div>
+                  <div class="input-field col s3">
+                    <input id="d" type="text" class="validate">
+                    <label for="d">Duração (meses)</label>
+                    <span class="helper-text" data-error="Campo inválido!!" data-success=""></span>
+                  </div>
+
+                </div>
+
+                
+
+                <div class="card">
+                  <div class="card-content">
+
+                      <table class="striped">
+                        <thead>
+                          <tr>
+                            <th>Financiamento</th>
+                            <th>Euro</th>
+                            <th>Moeda local (especificar)</th>
+                            <th>Percentual sobre o custo</th>
+
+                          </tr>
+
+
+                        </thead>
+
+                          <tbody>
+                            <tr>
+                                <td>
+                                  Contribuição solicitada a We World:
+                                </td>
+                                <td>
+                                  <div class="input-field col s10">
+                                    <input id="e1" type="number" class="validate">                      
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-field col s10">
+                                    <input id="d1" type="text" class="validate">                      
+                                  </div>
+                                </td>
+                                <td>
+                                  <div class="input-field col s10">
+                                    <input id="perce" type="text" class="validate">                      
+                                  </div>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                              <td>
+                                Contribuição da entidade solicitante:
+                              </td>
+                              <td>
+                                <div class="input-field col s10">
+                                  <input id="e2" type="number" class="validate">                      
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-field col s10">
+                                  <input id="d2" type="text" class="validate">                      
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-field col s10">
+                                  <input id="perce" type="text" class="validate">                      
+                                </div>
+                              </td>
+
+                            </tr>               
+
+                            <tr>
+                              <td>
+                                Contribuição parceiro local:
+                              </td>
+                              <td>
+                                <div class="input-field col s10">
+                                  <input id="e3" type="number" class="validate">                      
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-field col s10">
+                                  <input id="d3" type="text" class="validate">                      
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-field col s10">
+                                  <input id="perce" type="text" class="validate">                      
+                                </div>
+                              </td>                    
+                            </tr>
+
+                            <tr>
+                              <td>
+                                Contribuição beneficiários:
+                              </td>
+                              <td>
+                                <div class="input-field col s10">
+                                  <input id="e4" type="number" class="validate">                      
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-field col s10">
+                                  <input id="d4" type="text" class="validate">                      
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-field col s10">
+                                  <input id="perce" type="text" class="validate">                      
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                Contribuição de outras organizações:
+                              </td>
+                              <td>
+                                <div class="input-field col s10">
+                                  <input id="e5" type="number" class="validate">                      
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-field col s10">
+                                  <input id="d5" type="text" class="validate">                      
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-field col s10">
+                                  <input id="perce" type="text" class="validate">                      
+                                </div>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <b>Custo total</b>
+                              </td>
+                              <td>
+                                <div class="input-field col s10 ">
+                                  <input id="custo" type="number" class="validate">                      
+                                </div>
+                              </td>
+                            </tr>
+
+                          </tbody>
+                        </table>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>      
+      </form>
+
+    </div>
+
+
+
+
+
+
+<div id="nextandprevious" class="container">
+
+  <a href="infogerais2.html" class="waves-effect waves-light btn-small light-blue lighten-1">Anterior</a>
+  <a class="waves-effect waves-light btn modal-trigger light-blue right" href="#modal1">Próximo</a>
+
+</div>
+
+<div id="modal1" class="modal">
+  <div class="modal-content gree-lighten 2">
+   <h4>Seção completa</h4>
+   <p>Você terminou essa seção, deseja enviar ?</p>
+ </div>
+   <div class="modal-footer">  
+    
+    <button class="btn waves-effect waves-light red" type="submit" name="action">Cancelar
+      <i class="material-icons right">cancel</i>
+    </button>
+
+    <button class="btn waves-effect waves-light gree-lighten" type="submit" name="action">Sim
+      <i class="material-icons right">send</i>
+    </button>
+    
+  </div>
+
+</div>
+
+
+<footer class="page-footer light-blue lighten-1">
+  <div class="container">
+    <div class="row">
+      <div class="circle white left">
+        <img class="footerimg" src="images/logo1.png">
+      </div>
+
+
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2014 Copyright Text
+    </div>
+  </div>
+</footer>
+
+
+
+<!--JavaScript at end of body for optimized loading-->
+
+<script src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript">M.AutoInit();</script>
+
+</body>
+</html>

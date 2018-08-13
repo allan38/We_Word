@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Dashboard Solicitante
+	</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">    
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="./css/materialize.css">
+	<link rel="stylesheet" href="./css/aux.css">
+	<style type="text/css">
+	header, main, footer {
+		padding-left: 250px;
+	}
+
+	@media only screen and (max-width : 992px) {
+		header, main, footer {
+			padding-left: 0;
+		}
+	}
+</style>
+
+</head>
+<body>
+
+	<header>
+		
+
+		<nav>
+
+			
+
+			<div class="nav-wrapper corbg" >			
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<!-- TESTE -->
+					<ul id='dropdown1' class='dropdown-content cor' >
+						<li><a href="#!">Perfil</a></li>
+						<li><a href="#!">Sair</a></li>
+					</ul>
+					<!-- TESTE -->
+					<li><span><i class="material-icons">notifications</i></span></li>
+					<li><a href="#" class="dropdown-trigger cor white-text" data-target="dropdown1"><i class="material-icons right ">account_circle</i>Usuário Solicitante</a></li>
+				</ul>
+			</div>
+
+			<div class="nav-wrapper  " style="margin-top: 0; background: #335193 ">
+				<div class="container row">					
+					<i class="medium material-icons col s1">dashboard</i>
+					<h5 class="col s5" style="margin: 0; padding-top: 20px;">Painel do Parceiro</h5>	
+				</div>
+
+			</div>
+
+
+			<ul id="slide-out" class="sidenav sidenav-fixed" style="width: 250px;">
+
+				<div class="corbg center" style=" height: 150px;">
+					<div class="user-view center" style="padding-left: 60px;padding-top: 12px;">
+
+						<div class="circle white" >
+							<img class="responsive-img" src="images/logo1.png" style="margin-top: 40px; width: 100px; height: auto;">	
+						</div>
+					</div>
+
+				</div>
+				<li>
+					<ul class="collapsible">
+						<li>
+							<div class="collapsible-header cor"><i class="material-icons cor">access_time</i>Projetos em andamento</div>
+							<div class="collapsible-body cor">
+								<span>
+									<ul>
+										<li><a class="cor"><i class="material-icons indigo-text left">description</i><p class="cor" style="margin:  0;">projeto 1</p></a></li>
+										<li><a class="cor"><i class="material-icons indigo-text left">description</i><p class="cor" style="margin:  0;"">projeto 2</p></a></li>
+										<li><a class="cor"><i class="material-icons indigo-text left">description</i><p class="cor" style="margin:  0;"">projeto 3</p></a></li>
+
+									</ul>
+								</span>
+							</div>
+						</li>
+						<li>
+							<div class="collapsible-header cor"><i class="material-icons cor">beenhere</i>Projetos finalizados</div>
+							<div class="collapsible-body cor">
+								<span>
+									<ul>
+										<li><a class="cor"><i class="material-icons indigo-text left">description</i><p class="cor" style="margin:  0;">projeto 1</p></a></li>
+										<li><a class="cor"><i class="material-icons indigo-text left">description</i><p class="cor" style="margin:  0;"">projeto 2</p></a></li>
+										<li><a class="cor"><i class="material-icons indigo-text left">description</i><p class="cor" style="margin:  0;"">projeto 3</p></a></li>
+
+									</ul>
+								</span>
+							</div>
+						</li>
+						
+						<li>
+							<a href="index.html" class="no-padding"><div class="collapsible-header cor"><i class="material-icons cor">create_new_folder</i>Solicitar projeto</div></a>
+							
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+
+	
+	<main>
+
+		<div style="height: 30px;"></div>
+		
+		
+
+		<div class="card z-depth-0" style="margin: 15px; margin-top: 60px">
+			<div class="card-content no-padding cor">
+				<div class="row" style="margin-bottom: 0;">
+					<h3 class="col s7" style="margin-bottom: 50px; ">Projeto we world</h3>
+					<div class="input-field col s3" style="padding: 0; margin: 0;">					         
+						<select >
+							<option value="" disabled selected>Mês</option>
+							<option value="1">jan</option>
+							<option value="2">fev</option>
+							<option value="3">mar</option>
+							<option value="4">abr</option>
+							<option value="5">mai</option>
+							<option value="6">jun</option>
+							<option value="7">jul</option>
+							<option value="8">ago</option>
+							<option value="9">set</option>
+							<option value="10">out</option>
+							<option value="11">nov</option>
+							<option value="12">dez</option>
+						</select>          
+					</div> 	
+				</div>
+				<div class="row no-padding" >
+					<div class="card small col s2" style="margin: 5px; height: 300px;">
+						<div class="card-content center red-text" >
+							<h1>12</h1>
+							Atividades atrasadas
+						</div>
+					</div>
+					<div class="card small col s2" style="margin: 5px; height: 300px;">
+						<div class="card-content center cor  orange-text">
+							<h1>20</h1>
+							Atividades Pendentes
+						</div>
+					</div>
+					<div class="card small col s2" style="margin: 5px; height: 300px;">
+						<div class="card-content center cor green-text" >
+							<h1>32</h1>
+							Atividades concluídas
+						</div>
+					</div>
+
+					<div id="atvs" class="col s5" style="height: 300px; width: 500px;" ></div>
+										
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-content no-padding">
+				<div class="row">
+					<div class="col s12">
+						<ul class="tabs">
+							<li class="tab col s3"><a class="white-text" href="#test1">Atividades</a></li>
+							<li class="tab col s3"><a class=" white-text" href="#test2">Objetivos</a></li>
+							<li class="tab col s3 "><a class="white-text" href="#test3">Resultados</a></li>
+							<li class="tab col s3"><a class="white-text" href="#test4">Rendimento</a></li>
+							<li class="tab col s3"><a class="white-text" href="#test4">Orçamento</a></li>
+						</ul>
+					</div>
+
+					<div id="test1" class="col s12">
+						<ul class="atividades">
+							<li>
+								<div class="row">
+									<h6 class="col s2 cor"><i class="material-icons cor" style="margin: 12px;">flag</i>Atividade 1</h6>
+									
+									<div class="input-field col s1">
+										<label class="input-field"> Responsável</label>
+										<input disabled value="Fulano" id="disabled" type="text" class="validate">
+									</div>
+									
+									<div class="input-field col s2">
+										<select>
+											<option value="" disabled selected>Estado</option>
+											<option value="1">Andamento</option>
+											<option value="2">Completa</option>
+											<option value="3">Atrasado</option>
+										</select>										
+									</div>
+									<div class=" input-field col s2">
+										<label>Previsão de término</label>
+										<input type="text" class="datepicker">	
+									</div>
+
+									<div id="graf1" class="col s4" style="height: 200px" ></div>
+									
+									<div class="row" style="margin: 0;">
+
+										<p class="cor col s2" style="padding-left: 40px;">Completude das atividades:</p>
+										<p class="col s2">
+									      <label>
+									        <input type="checkbox" />
+									        <span>Atividades preparatórias</span>
+									      </label>
+									    </p>
+									    <p class="col s2">
+									      <label>
+									        <input type="checkbox" />
+									        <span>Atividades iniciais</span>
+									      </label>
+									    </p>
+									    <p class="col s2">
+									      <label>
+									        <input type="checkbox" />
+									        <span>Atividades recorrentes</span>
+									      </label>
+									    </p>
+									    <p>
+									      <label>
+									        <input type="checkbox" />
+									        <span>Atividades conclusivas</span>
+									      </label>
+									    </p>
+									</div>
+      
+								</div>
+							</li>
+							<div class="divider"></div>
+
+							<li>
+								<div class="row">
+									<h6 class="col s2 cor"><i class="material-icons cor" style="margin: 12px;">flag</i>Atividade 2</h6>
+									
+									<div class="input-field col s1">
+										<label class="input-field"> Responsável</label>
+										<input disabled value="Fulano" id="disabled" type="text" class="validate">
+									</div>
+									
+									<div class="input-field col s2">
+										<select>
+											<option value="" disabled selected>Estado</option>
+											<option value="1">Andamento</option>
+											<option value="2">Completa</option>
+											<option value="3">Atrasado</option>
+										</select>										
+									</div>
+									<div class=" input-field col s2">
+										<label>Previsão de término</label>
+										<input type="text" class="datepicker">	
+									</div>
+									<div id="graf3" class="col s4" style="height: 200px" ></div>
+
+
+									<div class="row" style="margin: 0;">
+										
+										<p class="cor col s2" style="padding-left: 40px;">Completude das atividades:</p>
+										<p class="col s2">
+									      <label>
+									        <input type="checkbox" />
+									        <span>Atividades preparatórias</span>
+									      </label>
+									    </p>
+									    <p class="col s2">
+									      <label>
+									        <input type="checkbox" />
+									        <span>Atividades iniciais</span>
+									      </label>
+									    </p>
+									    <p class="col s2">
+									      <label>
+									        <input type="checkbox" />
+									        <span>Atividades recorrentes</span>
+									      </label>
+									    </p>
+									    <p>
+									      <label>
+									        <input type="checkbox" />
+									        <span>Atividades conclusivas</span>
+									      </label>
+									    </p>
+									</div>
+
+								</div>
+							</li>
+							<div class="divider"></div>
+							<li>
+								<div class="row">
+									<h6 class="col s2 cor"><i class="material-icons cor" style="margin: 12px;">flag</i>Atividade 3</h6>
+									
+									<div class="input-field col s1">
+										<label class="input-field"> Resposável</label>
+										<input disabled value="Fulano" id="disabled" type="text" class="validate">
+									</div>
+									
+									<div class="input-field col s2">
+										<select>
+											<option value="" disabled selected>Estado</option>
+											<option value="1">Andamento</option>
+											<option value="2">Completa</option>
+											<option value="3">Atrasado</option>
+										</select>										
+									</div>
+									<div class=" input-field col s2">
+										<label>Previsão de término</label>
+										<input type="text" class="datepicker">	
+									</div>
+									<div id="graf2" class="col s4" style="height: 200px" ></div>
+
+									<div class="row" style="margin: 0;">
+										
+										<p class="cor col s2" style="padding-left: 36px;">Completude das atividades:</p>
+										<p class="col s2">
+									      <label>
+									        <input type="checkbox" />
+									        <span>Atividades preparatórias</span>
+									      </label>
+									    </p>
+									    <p class="col s2">
+									      <label>
+									        <input type="checkbox" />
+									        <span>Atividades iniciais</span>
+									      </label>
+									    </p>
+									    <p class="col s2">
+									      <label>
+									        <input type="checkbox" />
+									        <span>Atividades recorrentes</span>
+									      </label>
+									    </p>
+									    <p>
+									      <label>
+									        <input type="checkbox" />
+									        <span>Atividades conclusivas</span>
+									      </label>
+									    </p>
+									</div>
+
+								</div>
+							</li>
+							
+							
+						</ul>		
+						
+					</div>
+
+					<div id="test2" class="col s12">
+
+						<ul>
+							<li>
+								<div class="row">
+									<h6 class="col s2 cor"><i class="material-icons cor" style="margin: 12px;">flag</i> Indicador 1</h6>
+									
+									<div class="input-field col s2">
+										<label class="input-field"> Resposável</label>
+										<input disabled value="Fulano" id="disabled" type="text" class="validate">
+									</div>
+									
+									<div class="input-field col s2">
+										<select>
+											<option value="" disabled selected>Estado</option>
+											<option value="1">Andamento</option>
+											<option value="3">Completa</option>
+											<option value="3">Atrasado</option>
+										</select>										
+									</div>
+									<div class=" input-field col s2">
+										<label>Previsão de término</label>
+										<input type="text" class="datepicker">	
+									</div>
+								</div>
+							</li> 
+
+							<li>
+								<div class="row">
+									<h6 class="col s2 cor"><i class="material-icons cor" style="margin: 12px;">flag</i> Indicador 1</h6>
+									<p class="col s2 cor">Responsável: Fulano</p>
+									<div class="input-field col s2">
+										<select>
+											<option value="" disabled selected>Estado</option>
+											<option value="1">Andamento</option>
+											<option value="2">Finalizado</option>
+											<option value="3">Completo</option>
+										</select>										
+									</div>
+								</div>
+							</li> 
+							<li><p>Indicador 1</p></li>
+						</ul>
+					</div>
+
+					<div id="test3" class="col s12">
+
+					</div>
+
+					<div id="test4" class="col s12">
+
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+
+		
+
+	</main>
+
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/amcharts.js"></script>
+	<script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
+	<script type="text/javascript" src="js/graficos.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+
+	<script type="text/javascript">M.AutoInit();</script>
+
+
+
+</body>
+</html>
